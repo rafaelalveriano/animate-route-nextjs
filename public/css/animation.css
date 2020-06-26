@@ -1,0 +1,24 @@
+.transition-enter {
+  transform: translateX(2%);
+  opacity:0;  
+}
+.transition-enter-active {  
+  transform: translateX(0);    
+  opacity: 1;
+  transition-property: transform,opacity;
+  transition-duration: 900ms;
+  transition-timing-function: ease-in-out 900ms;
+  
+}
+.transition-exit {
+  opacity: 1;
+  transform: translateX(0);
+}
+.transition-exit-active {
+  transform: translateX(2%);  
+  opacity: 0;
+  transition-property: transform,opacity;
+  transition-duration: 800ms;
+  transition-timing-function: linear ;
+
+}
